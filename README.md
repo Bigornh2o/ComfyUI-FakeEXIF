@@ -20,7 +20,7 @@ A custom node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) that allo
 1. Navigate to your ComfyUI `custom_nodes` folder.
 2. Clone this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ComfyUI-FakeEXIF.git
+   git clone https://github.com/Bigornh2o/ComfyUI-FakeEXIF.git
    ```
 3. Navigate into the folder and install the requirement (`piexif`):
    ```bash
