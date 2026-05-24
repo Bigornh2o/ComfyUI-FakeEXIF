@@ -79,8 +79,9 @@ class SaveImageWithFakeEXIF:
             exif_dict["0th"][piexif.ImageIFD.Software] = b"17.4.1" 
             
             exif_bytes = piexif.dump(exif_dict)
-            
-            file = f"{filename}_{counter:05}_.{format}"
+            # Construction du nom de fichier avec Date et Heure
+            dt_filename = dt.strftime("%Y%m%d_%H%M%S")
+            file = f"{filename}_{dt_filename}_{counter:05}.{format}"
             output_file_path = os.path.join(full_output_folder, file)
             
             save_format = format.upper()
